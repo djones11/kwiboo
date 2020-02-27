@@ -1,0 +1,14 @@
+{
+  "dog": {
+    "en": "Dog",
+    "es": "Perro"
+  },
+  "cat": {
+    "en": "Cat",
+    "es": "Gato"
+  },
+  "bird": {
+    "en": "Bird",
+    "es": "Pájaro"
+  }
+}
