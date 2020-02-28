@@ -10,5 +10,51 @@
   "bird": {
     "en": "Bird",
     "es": "Pájaro"
+  },
+  "search_placeholder": {
+    "en": "Search ...",
+    "es": "Buscar ..."
+  },
+  "all": {
+    "en": "All",
+    "es": "Todo"
+  },
+  "select_animal_header": {
+    "en": "What animal would you like to pick?",
+    "yoda": "To pick what animal would you like? Yes, hrrrm.",
+    "es": "¿Qué animal te gustaría elegir?"
+  },
+  "no_animals_selected_info": {
+    "en": "No animals have been found",
+    "yoda": "Found no animals you have.",
+    "es": "No se han encontrado animales"
+  },
+  "add_cat_title": {
+    "en": "Add cat",
+    "es": "Añadir gato"
+  },
+  "add_dog_title": {
+    "en": "Add dog",
+    "es": "Añadir perro"
+  },
+  "add_bird_title": {
+    "en": "Add bird",
+    "es": "Añadir pájaro"
+  },
+  "change_to_list_view_title": {
+    "en": "List view",
+    "es": "Vista de la lista"
+  },
+  "change_to_tile_view_title": {
+    "en": "Tile view",
+    "es": "Vista de azulejos"
+  },
+  "sort_by_creation": {
+    "en": "Sort by creation time",
+    "es": "Ordenar por hora de creación"
+  },
+  "sort_by_name": {
+    "en": "Sort by name",
+    "es": "Ordenar por nombre"
   }
 }

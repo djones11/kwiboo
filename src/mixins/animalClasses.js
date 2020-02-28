@@ -20,7 +20,7 @@ const nameLength = names.length;
 export default {
   methods: {
     animalFactory(type, ...params) {
-console.log(type)
+
     // Generates animal classes and ensures only valid animal types can be created
 
       const availableAnimals = {
@@ -44,6 +44,7 @@ console.log(type)
         constructor() {
           this.name = names[Math.floor(Math.random() * nameLength)];
           this.id = Math.random() + new Date().getTime();
+          this.creation = new Date().getTime();
         }
 
         speak() {

@@ -1,23 +1,73 @@
 <template>
   <div id="app">
+    <div class="global_control_wrapper">
+      <div class="language_picker_container">
+        <div class="selected_language_container">
+          <img :src="availableLanguage[chosenLanguage]">
+          <span>{{ chosenLanguage.toUpperCase() }}</span>
+          <span class="icon icon-caret-right"></span>
+        </div>
+      </div>
+    </div>
     <Animals />
   </div>
 </template>
 
 <script>
+import { mapMutations, mapState } from "vuex";
+
+import britishFlag from "@/images/uk.svg";
+import spanishFlag from "@/images/spain.svg";
+import yoda from "@/images/yoda.png";
+
 import Animals from "@/modules/Animals";
 
 export default {
   data: function() {
-    return {};
+    return {
+      availableLanguage: {
+        en: britishFlag,
+        es: spanishFlag,
+        yoda: yoda
+      },
+    };
   },
   components: {
     Animals
+  },
+  computed: {
+    ...mapState(["chosenLanguage"])
+  },
+  methods: {
+    ...mapMutations(["UPDATE_CHOSEN_LANGUAGE"])
   }
 };
 </script>
 
 <style lang="scss">
+
+.global_control_wrapper {
+  padding: 8px;
+}
+
+.selected_language_container {
+  display: flex;
+  align-items: center;
+  color: $light_text_colour;
+  font-weight: 600;
+  cursor: pointer;
+
+  img {
+    margin-right: 8px;
+    width: 24px;
+  }
+
+  .icon {
+    padding-left: 6px;
+  }
+}
+
+
 body,
 html,
 #app {
